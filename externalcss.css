@@ -1,16 +1,53 @@
+/* download font */
+@font-face {
+    font-family: "myFont";
+    src: url("ZenDots-Regular.ttf");
+  }
+/* Resposiveness */
+@media screen and (max-width: 600px) {
+    h1{
+        max-width: 600px;
+    }
+}
 /* change h1 style*/
-h1 {
-    color:blue;
-    background-color: #c9d2da;
-    border-style: dashed;
+h1, h2 {
+    color:blue; /* change text color */
+    background-color: #c9d2da; /* change background color */
+    border-style: dashed; /* border style */
     border-width: 5px;
     border-top: solid;
     border-radius: 10in;
     text-align: center;
     display: inline-block;
-    position: static;
+    position: static; /* static position */
+    margin-top:1cm;
+    margin-bottom: 1cm;
+    margin-left: 45vw;
+    max-width: 800px;
+    max-height: 300px;
 }
 
+/* flexbox */
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* attribute selector */
+a[title]{
+    color: indianred;
+}
+/* combining two selectors */
+p.myclass {
+    background-color: khaki;
+}
+/* grid */
+.container {
+    display: grid;
+    grid-template-columns: 40px 50px 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+/* change header style */
 header {
     text-align: center;
     height: 1cm;
@@ -19,37 +56,66 @@ header {
     width: 100vm;
     position: sticky;
     top: 20px;
+    margin: 1cm 1cm 1cm 1cm;
+    padding: 0.3cm 0cm 0.1cm 0cm;
 }
+/* change paragraph style */
 p {
     text-align: center;
     text-decoration: underline;
     display: block;
+    padding-right: 5vw;
+    font-family:"myFont";
 }
+/* .block selector, have some style */
 .block{
     color: red;
     border: red;
     border-style: double;
 }
+/* change unorder list style */
 ul{
     display: flex;
     flex-direction: column;
 }
-h3 {
+
+/* change h3 style */
+h3{
     color: rgb(197, 93,161);
 }
 
+/* pseudo-class selector */
+/* change button style */
 button:hover {
     color: pink;
 }
-
+/* pseudo-class selector for button */
 button:active {
     color: rgb(71, 18, 218);
 }
+
+/* pseudo-class selector for h1  */
 h1:hover {
     color: purple;
 }
-.box {
-    border: 1px solid black;
-    border-color: red;
-    border-width: 1em;
+/* universal selector */
+*{
+    background-color: lavender;
+}
+/* child combinator */
+div > h3 {
+    background-color: blanchedalmond;
+}
+/* general sibling combinator */
+h1 ~ h3 {
+    color:cornflowerblue;
+}
+/* adjacent sibling combinator*/
+h1 + div{
+    background-color: darkgray;
+}
+
+/* descendant combinator */
+li li{
+    list-style-type: disc;
 }
