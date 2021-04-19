@@ -1,0 +1,55 @@
+/* change h1 style*/
+h1 {
+    color:blue;
+    background-color: #c9d2da;
+    border-style: dashed;
+    border-width: 5px;
+    border-top: solid;
+    border-radius: 10in;
+    text-align: center;
+    display: inline-block;
+    position: static;
+}
+
+header {
+    text-align: center;
+    height: 1cm;
+    border-bottom: rgb(71, 18, 218);
+    border-style: ridge;
+    width: 100vm;
+    position: sticky;
+    top: 20px;
+}
+p {
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+}
+.block{
+    color: red;
+    border: red;
+    border-style: double;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+h3 {
+    color: rgb(197, 93,161);
+}
+
+button:hover {
+    color: pink;
+}
+
+button:active {
+    color: rgb(71, 18, 218);
+}
+h1:hover {
+    color: purple;
+}
+.box {
+    border: 1px solid black;
+    border-color: red;
+    border-width: 1em;
+}
